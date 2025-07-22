@@ -29,7 +29,7 @@ function Projects() {
       description:
         'An AI-powered presentation generator that automates the creation of professional presentations. Users can input their content, and the AI will generate slides, significantly reducing the time spent on manual slide creation.',
       tech: ['Flutter', 'Dart'],
-      img: '/ai-presenation.png',
+      img: '/ai-presentation.png',
       video: '/ai-presentation.mp4',
       github: '#',
       live: 'https://ai-presentation-omega.vercel.app/',
