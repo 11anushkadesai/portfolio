@@ -39,7 +39,7 @@ function Navbar() {
   return (
     <div className={`
       fixed top-2 left-1/2 transform -translate-x-1/2 z-50
-      h-20 transition-all duration-300 ease-in-out
+      h-15 transition-all duration-300 ease-in-out
       ${isScrolled
         ? 'bg-white/80 backdrop-blur-md rounded-full shadow-lg w-[95%] sm:w-[90%] md:w-[70%] lg:w-[60%] xl:w-[50%]'
         : 'border-b border-gray-200 w-full bg-gradient-to-r from-gray-100 via-white to-gray-50'}
