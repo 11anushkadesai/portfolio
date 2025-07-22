@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {
   FaUser, FaCode, FaBriefcase,
-  FaProjectDiagram, FaBlog, FaEnvelope,
+  FaProjectDiagram, FaEnvelope,
   FaBars, FaTimes,
 } from "react-icons/fa";
 
@@ -19,7 +19,7 @@ function Navbar() {
       }, 50);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
       clearTimeout(timeout);
       window.removeEventListener("scroll", handleScroll);
@@ -39,7 +39,7 @@ function Navbar() {
   return (
     <div className={`
       fixed top-2 left-1/2 transform -translate-x-1/2 z-50
-      h-20 md:h-20 transition-all duration-300 ease-in-out
+      h-20 transition-all duration-300 ease-in-out
       ${isScrolled
         ? 'bg-white/80 backdrop-blur-md rounded-full shadow-lg w-[95%] sm:w-[90%] md:w-[70%] lg:w-[60%] xl:w-[50%]'
         : 'border-b border-gray-200 w-full bg-gradient-to-r from-gray-100 via-white to-gray-50'}
@@ -68,7 +68,7 @@ function Navbar() {
           <div onClick={() => scrollToSection('contact')} className="flex items-center gap-1 hover:text-gray-500 cursor-pointer"><FaEnvelope /> {!isScrolled && <span>Contact</span>}</div>
         </div>
 
-        {/* Mobile Menu Toggle Button */}
+        {/* Mobile Menu Toggle */}
         <button className="md:hidden ml-auto text-gray-800" onClick={toggleMenu}>
           {isMenuOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
         </button>
