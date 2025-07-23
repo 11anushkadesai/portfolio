@@ -58,7 +58,7 @@ function Navbar() {
         {/* Desktop Navigation */}
         <div className={`
           hidden md:flex items-center ml-auto transition-all duration-300
-          ${isScrolled ? 'gap-x-8 text-base m-10' : 'gap-x-6 text-xl ml-auto'}
+          ${isScrolled ? 'gap-x-8 text-base m-10' : 'gap-x-6 text-l ml-auto'}
           text-gray-800
         `}>
           <div onClick={() => scrollToSection('about')} className="flex items-center gap-1 hover:text-gray-500 cursor-pointer"><FaUser /> {!isScrolled && <span>About</span>}</div>
