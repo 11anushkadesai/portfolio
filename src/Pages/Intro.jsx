@@ -21,12 +21,13 @@ function Intro() {
         </h1>
 
         <h2 className="text-base sm:text-lg md:text-xl font-medium text-gray-700 dark:text-gray-300 mb-4">
-          Frontend Developer
-        </h2>
+  Full Stack Developer
+</h2>
 
-        <p className="max-w-md sm:max-w-lg md:max-w-2xl text-gray-600 dark:text-gray-400 text-xs sm:text-sm md:text-base mb-6 mx-auto">
-          I build clean and responsive web interfaces using React, Tailwind CSS, and love transforming design concepts into interactive, modern web applications.
-        </p>
+<p className="max-w-md sm:max-w-lg md:max-w-2xl text-gray-600 dark:text-gray-400 text-xs sm:text-sm md:text-base mb-6 mx-auto">
+  I design and develop complete web and mobile applications — from responsive frontends using React and Tailwind CSS to robust backends with Node.js, Express, and MySQL. I also build mobile apps with Flutter and automate tasks using Python and Selenium.
+</p>
+
 
         <div className="flex gap-2 sm:gap-3 flex-wrap justify-center">
           <button
